@@ -4,6 +4,15 @@
 Code Ideal: I'm too lazy for something like this .__.
 No Bignum => n <= 80?
 BigNum => AC
+Simple DP 
+
+dp[i] = dp[i-1] + dp[i-2]
+
+Explaination :
+We have 2 kind of steps 1 stair-step and 2 stairs-step
+
+so dp[i] is number of ways to step to stair i so wwe just need to add dp[i-1] and dp[i-2] 
+
 */
 
 #include "bits/stdc++.h"
