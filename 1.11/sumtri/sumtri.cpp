@@ -2,6 +2,13 @@
 
 /* 
 Code Ideal: I'm too lazy for something like this .__.
+
+Simple DP 
+
+dp[i][j] is best way to go to floor i des j
+
+dp[i][j] = max(dp[i-1][j-1] , dp[i-1][j]) + a[i][j];
+
 */
 
 #include "bits/stdc++.h"
