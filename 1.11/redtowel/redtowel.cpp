@@ -23,6 +23,39 @@ bool safe(int x , int y ){
 	return false;
 }
 
+int to_num(char a){
+        return a-'0';
+}
+
+string cong(string a, string b){
+        reverse(a.begin() , a.end());
+        reverse(b.begin() , b.end());
+
+        while(a.size() < b.size())
+                a += '0';
+
+        while(b.size() < a.size())
+                b+= '0';
+        string rev = "";
+        int add , nho = 0;
+        for(int i = 0 ; i < a.size() ; i++){
+                add = to_num(a[i]) + to_num(b[i]) + nho;
+                if(add > 9){
+                        nho = 1;
+                        add %= 10;
+                }else nho = 0;
+                rev += add + '0';
+        }
+
+        if(nho > 0)
+                rev += nho + '0';
+
+        reverse(rev.begin() , rev.end());
+        return rev;
+
+}
+
+
 void semt(){
 	for(int i = 0 ; i < 105 ; i++){
 		for(int j = 0 ; j < 105 ; j++){
@@ -47,9 +80,9 @@ void solve(int n){
 	}
 
 	queue<pair<int , int>> q;
-	int cnt[w+1][h+1];
+	string cnt[w+1][h+1];
 	memset(cnt , 0 , sizeof(cnt));
-	cnt[0][0] = 1;
+	cnt[0][0] = "1";
 	best[0][0] = 0;
 	q.push({0 , 0});
 	while(!q.empty()){
@@ -63,7 +96,7 @@ void solve(int n){
 				cnt[x+1][y] = cnt[x][y];
 				q.push({x+1 , y});
 			}else if(best[x+1][y] == best[x][y] + 1)
-				cnt[x+1][y] += cnt[x][y];
+				cnt[x+1][y] = cong(cnt[x+1][y] , cnt[x][y]);
 		}
 
 		if(safe(x, y+1)){
@@ -73,7 +106,7 @@ void solve(int n){
 				cnt[x][y+1] = cnt[x][y];
 				q.push({x , y+1});
 			}else if(best[x][y] + 1 == best[x][y+1]){
-				cnt[x][y+1] += cnt[x][y];
+				cnt[x][y+1] = cong(cnt[x][y+1] ,cnt[x][y]);
 			}
 		}
 	}
