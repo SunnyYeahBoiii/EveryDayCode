@@ -4,6 +4,11 @@
 Code Ideal: I'm too lazy for something like this .__.
 No Bignum => n <= 80?
 BigNum => AC
+
+Simple DP 
+
+This is DP for Beginner if you don't know how to do it, search on gg
+or contact me on facebook :3
 */
 
 #include "bits/stdc++.h"
