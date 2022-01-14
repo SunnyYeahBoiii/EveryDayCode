@@ -81,9 +81,9 @@ void solve(){
 
     cin >> totalTime >> numberOfCDS;
 
-    CDs.resize(numberOfCDS+5);
-    chose.resize(numberOfCDS+5);
-    result.resize(numberOfCDS+5);
+    CDs.resize(numberOfCDS+5 , 0);
+    chose.resize(numberOfCDS+5 , 0);
+    result.resize(numberOfCDS+5 , 0);
 
     for(int i = 0 ; i < numberOfCDS ; i++)
         cin >> CDs[i];
