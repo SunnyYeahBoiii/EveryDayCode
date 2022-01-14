@@ -36,16 +36,18 @@ using namespace std;
 vector<int> CDs;
 vector<int> chose;
 vector<int> result;
-int res = 0 , totalTime , numberOfCDS;
+int res = -1 , Count = 0, totalTime , numberOfCDS;
 
-int getSum(){
-    int Sum = 0;
+pair<int , int> getSum(){
+    int Sum = 0 , count = 0;
 
-    for(int i = 0 ; i < numberOfCDS ; i++)
+    for(int i = 0 ; i < numberOfCDS ; i++){
         Sum += CDs[i] * chose[i];
-    if(Sum > totalTime)
-        return -1;
-    return Sum;
+        if(chose[i] == 1)
+            count += 1;
+    }
+
+    return {Sum , count};
 }
 
 void backtrack(int x){
@@ -56,12 +58,19 @@ void backtrack(int x){
         if(x < numberOfCDS-1)
             backtrack(x+1);
         else{
-            int test = getSum();
+            pair<int , int> test = getSum();
 
-            if(test > res && test <= totalTime){
+            int sum = test.first , count = test.second;
+
+            if(sum > res && sum <= totalTime){
                 for(int i = 0 ; i < numberOfCDS ; i++)
                     result[i] = CDs[i] * chose[i];
-                res = test;
+                res = sum;
+                Count = count;
+            }else if(sum == res && count > Count){
+                Count = count;
+                for(int i = 0 ; i < numberOfCDS ; i++)
+                    result[i] = CDs[i] * chose[i];
             }
         }
     }
@@ -72,9 +81,9 @@ void solve(){
 
     cin >> totalTime >> numberOfCDS;
 
-    CDs.resize(numberOfCDS);
-    chose.resize(numberOfCDS);
-    result.resize(numberOfCDS);
+    CDs.resize(numberOfCDS+5);
+    chose.resize(numberOfCDS+5);
+    result.resize(numberOfCDS+5);
 
     for(int i = 0 ; i < numberOfCDS ; i++)
         cin >> CDs[i];
@@ -87,7 +96,7 @@ void solve(){
 }
 
 int32_t main(){
-	FileInput();
+	//FileInput();
 	fast();    
 	solve();
 	return 0;	
