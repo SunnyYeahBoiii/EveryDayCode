@@ -102,15 +102,15 @@ query cross(query a , query b){
     query ret;
     
     if(a.y[1] > b.y[1]){
-        ret.x[1] = a.x[1];
-        ret.y[1] = b.y[1];
+        ret.x[1] = b.x[1];
+        ret.y[1] = a.y[1];
     }else{
         ret.x[1] = b.x[1];
         ret.y[1] = b.y[1];
     }
     ret.x[2] = min(a.x[2] , b.x[2]);
-    ret.y[2] = b.y[1];
-    ret.x[3] = b.x[1];
+    ret.y[2] = b.y[2];
+    ret.x[3] = a.x[3];
     ret.y[3] = min(a.y[3] , b.y[3]);
     ret.x[4] = min(a.x[4] , b.x[4]);
     ret.y[4] = min(a.y[4] , b.y[4]);
@@ -135,7 +135,7 @@ int test_sub2(int x){
 }
 
 void print(query x){
-    cout << "x \n" << endl;
+    cout << "x" << endl;
     for(int i = 1 ; i <= 4 ; i++)
         cout << x.x[i] << " " << x.y[i] <<endl;
 
@@ -160,36 +160,34 @@ query gt(int x , int y){
 int test_sub3(int x){
 
     int x1 = plan[x][0] , y1 = plan[x][1] , x2 = plan[x][2] , y2 = plan[x][3] , x3 = plan[x][4] , y3 = plan[x][5];
-
     int sum = prefix[x1+r-1][y1+r-1] - prefix[x1+r-1][y1-1] - prefix[x1-1][y1+r-1] + prefix[x1-1][y1-1]; 
-    
     sum += prefix[x2+r-1][y2+r-1] - prefix[x2+r-1][y2-1] - prefix[x2-1][y2+r-1] + prefix[x2-1][y2-1];
-      
+ 
     sum += prefix[x3+r-1][y3+r-1] - prefix[x3+r-1][y3-1] - prefix[x3-1][y3+r-1] + prefix[x3-1][y3-1];  
-    
 
-    query t = minuss(x1 , y1 , x2 , y2);
-    
+    query t = minuss(x1 , y1 , x2 , y2);    
     query t2 = minuss(x2 , y2 , x3 , y3);
-    
     query t3 = minuss(x1 , y1 , x3 , y3);
-    
+
     int m = 0;
+    cout << "sum = " << sum << endl;
     if(valid(t))
         sum -= prefix[t.x[1]-1][t.y[1]-1] - prefix[t.x[2]][t.y[2]-1] - prefix[t.x[3]-1][t.y[3]] + prefix[t.x[4]][t.y[4]];
-    
+    cout << "sum = " << sum << endl;
     if(valid(t2))
         sum -= prefix[t2.x[1]-1][t2.y[1]-1] - prefix[t2.x[2]][t2.y[2]-1] - prefix[t2.x[3]-1][t2.y[3]] + prefix[t2.x[4]][t2.y[4]];
-    
+    cout << "sum = " << sum << endl;
     if(valid(t3))
         sum -= prefix[t3.x[1]-1][t3.y[1]-1] - prefix[t3.x[2]][t3.y[2]-1] - prefix[t3.x[3]-1][t3.y[3]] + prefix[t3.x[4]][t3.y[4]];
-    
-    query ab = gt(x3 , y3);
-    query t4 = cross(t , ab);
-    
+    cout << "sum = " << sum << endl;
+    query t4 = cross(t , t3);
+    print(t);
+    print(t2);
+    print(t3);
+    print(t4);
+
     if(valid(t4))
         sum += prefix[t4.x[1]-1][t4.y[1]-1] - prefix[t4.x[2]][t4.y[2]-1] - prefix[t4.x[3]-1][t4.y[3]] + prefix[t4.x[4]][t4.y[4]];
-
     return sum;
 }
 
@@ -214,14 +212,14 @@ void solve(){
 
     int res = 0;
 
- if(k <= 50){
+    /*if(k <= 50){
         for(int i = 0 ; i < k ; i++){
             int t = test_subtask1(i);   
             res = max(res , t);
             //cout << t << endl;
         }
         cout << res << endl;
-    }else{
+    }else{*/
         if(p == 2){
             for(int i = 0 ; i < k ; i++){
                 int t = test_sub2(i);   
@@ -236,7 +234,7 @@ void solve(){
             cout << res << endl;
         }
 
-    }
+    //}
 
 }
 
