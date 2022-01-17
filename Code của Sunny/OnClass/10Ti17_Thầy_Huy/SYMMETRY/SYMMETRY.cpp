@@ -22,10 +22,16 @@ void solve(){
 
     string a , b;
     cin >> a;
-    a = '$' + a;
+    
+    for(int i = 0 ; i < a.size() ; i++){
+        if(a[i] < 97)
+            a[i] += 32;
+    }
+
     b = a;
     reverse(b.begin() , b.end());
     b = '$' + b;
+    a = '$' + a;
 
     for(int i = 1 ; i < a.size() ; i++){
         for(int j = 1 ; j < b.size() ; j++){
@@ -37,7 +43,9 @@ void solve(){
         //cout << endl;
     }
 
-    cout << a.size() - dp[a.size()-1][b.size()-1] - 1 << endl;
+    //cout << a << " " << b << endl;
+
+    cout << a.size() - dp[a.size()-1][a.size()-1] - 1 << endl;
 }
 
 int32_t main(){
