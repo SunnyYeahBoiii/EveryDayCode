@@ -18,16 +18,43 @@ using namespace std;
 
 void solve(){
 
+    int n;
+    string s;
+    cin >> n;
+    cin >> s;
+
+    string first , end;
+
+    for(int i = 0 ; i <= 4 ; i++){
+
+        first = "";
+        for(int j = 0 ; j < i ; j++){
+            first += s[j];
+        }
+
+        end = "";
+        for(int j = n - (4 - i) ; j < n ; j++)
+            end += s[j];
+
+        //cout << first << " " << end << endl;
+        if(first + end == "2020"){
+            cout << "YES" << endl;
+            return;
+        }
+    }
+
+    cout << "NO" << endl;
+
 }
 
 int32_t main(){
 	FileInput();
 	fast();    
-	/*
+	
 	int t;
     cin >> t;
     while(t--)
-	*/
+	
 	solve();
 	return 0;	
 }
