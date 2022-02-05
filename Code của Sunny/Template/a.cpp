@@ -16,13 +16,14 @@ using namespace std;
 #define endl "\n"
 #define INF 1 << 30
 
+
 void solve(){
 
 }
 
 int32_t main(){
 	FileInput();
-	fast();    
+	fast();     
 	/*
 	int t;
     cin >> t;

@@ -16,6 +16,10 @@ using namespace std;
 #define endl "\n"
 #define INF 1 << 30
 
+/*
+
+Note : First Solution (without 2 stack trick)
+
 void solve(){
 
     int n , k;
@@ -46,12 +50,113 @@ void solve(){
             //cout << l << " " << max << " " << min << endl;
         }
         //cout << r << " " << l << " " << max << " " << min << endl;
-        
-        /*
-        for(auto s : count)
-            cout << s << " ";
+
+        res += r - l + 1;
+    }
+
+    cout << res << endl;
+}
+
+*/
+
+struct sstack{
+
+    vector<int> s , smin = {LLONG_MAX} , smax = {LLONG_MIN};
+
+    void push(int a){
+        s.push_back(a);
+        smin.push_back(min(a , smin.back()));
+        smax.push_back(max(a , smax.back()));
+    }
+
+    bool empty(){
+        return s.empty();
+    }
+
+    void pop(){
+        s.pop_back();
+        smin.pop_back();
+        smax.pop_back();
+    }
+
+    int minn(){
+        return smin.back();
+    }
+
+    int maxx(){
+        return smax.back();
+    }
+
+    void print(){
+
+        for(int i = 0 ; i < s.size() ; i++)
+            cout << s[i] << " ";
         cout << endl;
-        */
+
+        for(int i = 1 ; i < smin.size() ; i++)
+            cout << smin[i] << " ";
+        cout << endl;
+
+        for(int i = 1 ; i < smax.size() ; i++)
+            cout << smax[i] << " ";
+        cout << endl;
+
+    }
+
+};
+
+int n , k;
+vector<int> a(100005);
+sstack stack1 , stack2;
+
+void add(int a){
+    stack2.push(a);
+}
+
+void remove(){
+    if(stack1.empty()){
+        while(!stack2.empty()){
+            stack1.push(stack2.s.back());
+            stack2.pop();
+        }
+    }
+
+    stack1.pop();
+}
+
+bool gud(){
+
+    int mn = min(stack1.minn() , stack2.minn());
+    int mx = max(stack1.maxx() , stack2.maxx());
+
+    return mx - mn <= k;
+
+}
+
+void solve(){
+
+    cin >> n >> k;
+
+    for(int i = 0 ; i < n ; i++)
+        cin >> a[i];
+
+    int l = 0 , res = 0;
+
+    for(int r = 0 ; r < n ; r++){
+
+        add(a[r]);
+
+        while(!gud()){
+            remove();   
+            l++;
+        }
+
+        cout << "s1" << endl;
+        stack1.print();
+        cout << endl;
+        cout << "s2" << endl;
+        stack2.print();
+        cout << endl;
 
         res += r - l + 1;
     }
