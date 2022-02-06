@@ -151,6 +151,7 @@ void solve(){
             l++;
         }
 
+        cout << l << " " << r << endl; 
         cout << "s1" << endl;
         stack1.print();
         cout << endl;
