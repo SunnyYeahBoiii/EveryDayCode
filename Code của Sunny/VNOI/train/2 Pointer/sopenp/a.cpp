@@ -17,7 +17,6 @@ using namespace std;
 #define INF 1 << 30
 
 int a[5000005];
-map<int , int> c;
 
 void solve(){
 
@@ -27,6 +26,8 @@ void solve(){
     int lo = 0 , cnt = 0 , res = 0;
 
     //sort(a.begin() , a.end());
+
+    unordered_map<int , int> c;
 
     for(int i = 0 ; i < n ; i++)
         cin >> a[i];
@@ -49,7 +50,7 @@ void solve(){
     
     }
 
-    map<int , int> c2;
+    unordered_map<int , int> c2;
 
     int cnt2 = 0;
 
