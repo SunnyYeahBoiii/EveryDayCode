@@ -14,10 +14,26 @@ using namespace std;
 #define FileInput() if(NAME != "remizdabest"){freopen(NAME".inp" , "r" , stdin);freopen(NAME".out" , "w" , stdout);}
 #define int long long
 #define endl "\n"
-#define INF LLONG_MAX
+#define INF 1 << 30
 
 
 void solve(){
+
+    int n;
+
+    cin >> n;
+
+    int res = 0;
+
+    while(n > 0){
+
+        res += n / 5;
+
+        n /= 5;
+
+    }
+
+    cout << res << endl;
 
 }
 

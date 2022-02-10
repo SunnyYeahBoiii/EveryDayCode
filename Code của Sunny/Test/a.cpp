@@ -14,10 +14,16 @@ using namespace std;
 #define FileInput() if(NAME != "remizdabest"){freopen(NAME".inp" , "r" , stdin);freopen(NAME".out" , "w" , stdout);}
 #define int long long
 #define endl "\n"
-#define INF LLONG_MAX
+#define INF 1 << 30
 
 
 void solve(){
+
+    vector<int> a = {1 , 2 , 3 , 4 , 5};
+
+    int x = 3;
+
+    cout <<     << endl;
 
 }
 

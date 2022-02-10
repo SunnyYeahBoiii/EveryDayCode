@@ -14,21 +14,35 @@ using namespace std;
 #define FileInput() if(NAME != "remizdabest"){freopen(NAME".inp" , "r" , stdin);freopen(NAME".out" , "w" , stdout);}
 #define int long long
 #define endl "\n"
-#define INF LLONG_MAX
+#define INF 1 << 30
 
 
 void solve(){
+
+    int a,  b;
+
+    cin >> a >> b;
+
+    
+
+    int s1 = 3*a - (-a + 2*b) - 2*(-b+2*a);
+
+    int s2 = 3*b - 2*(-a + 2*b) - (-b + 2*a);
+
+    cout << s1 << " " << s2 << endl;
 
 }
 
 int32_t main(){
 	FileInput();
 	fast();     
-	/*
+	
+    /*
 	int t;
     cin >> t;
     while(t--)
-	*/
+    */
+
 	solve();
 	return 0;	
 }
