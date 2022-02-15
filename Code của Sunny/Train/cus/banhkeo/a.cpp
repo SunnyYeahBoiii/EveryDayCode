@@ -10,9 +10,12 @@ map<int , bool> passed;
 void dfs(int x){
     if(passed[x] == true)
         return;
+    passed[x] = true;
     //cout << x << endl;
     for(int i = 0 ; i < path[x].size() ; i++){
-        passed[path[x][i]] = true;
+        if(passed[path[x][i]])
+            continue;
+
         dfs(path[x][i]);
     }
 }
