@@ -8,7 +8,7 @@
 - ![This is an image](/Code%20c%E1%BB%A7a%20Sunny/Images/HSGCMM2.jpg) 
 
 
-9/3:
+## 9/3:
 
 - Đã tải lại osu :(
 
@@ -25,3 +25,6 @@
 
     >  Maximum Product : [Submission](https://codeforces.com/contest/1406/submission/148979304)
         | Type : Sortings , Greedy , Implementation
+
+    >   Petr and a Combination Lock	: [Submission](https://codeforces.com/contest/1097/submission/148988096)
+        | Type : Recursion , Bitmasks
