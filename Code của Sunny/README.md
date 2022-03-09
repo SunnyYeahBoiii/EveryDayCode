@@ -34,5 +34,5 @@
 
 ###  **- In Conclusion , Today , Sunny Solved 15 Excersises But 10 Of Them Are Easy So Just 5 Were Reconized As Solved.** 
 
-- ![this is an image](/Code%20c%E1%BB%A7a%20Sunny/Images/GoodJob.jpg)
+<img src="https://raw.githubusercontent.com/SunnyYeahBoiii/EveryDayCode/main/Code%20của%20Sunny/Images/GoodJob.jpg" width="400" height="300"  >
 
