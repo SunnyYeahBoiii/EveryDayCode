@@ -18,7 +18,10 @@
         | Type : Greedy
 
     >  Yet Another Broken Keyboard : [Submission](https://codeforces.com/contest/1272/submission/148974969)
-        | Type : Implement , Combinatarics
+        | Type : Implementation , Combinatarics
 
     >   Reverse String : [Submission](https://leetcode.com/submissions/detail/656489516/?from=explore&item_id=1440)
-        | Type : Implement
+        | Type : Implementation
+
+    >  Maximum Product : [Submission](https://codeforces.com/contest/1406/submission/148979304)
+        | Type : Sortings , Greedy , Implementation
