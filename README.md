@@ -29,4 +29,4 @@
     >   Creating the Contest : [Submission](https://codeforces.com/contest/1029/submission/148993362)
         | Type : DP (Needs Optimization I Tried Sliding Window And It Worked :3)
 
-    >   10 More On-Class Excersises [Code](/Code%20c%E1%BB%A7a%20Sunny/OnClass/24.10Tin)
+    >   10 More On-Class Excersises : [Code](/Code%20c%E1%BB%A7a%20Sunny/OnClass/24.10Tin)
