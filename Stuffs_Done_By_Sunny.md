@@ -10,8 +10,11 @@
 
 - Excersises done:
 
-    > +) Even-Odd Game : [Submission](https://codeforces.com/contest/1472/submission/148972474)
+    > Even-Odd Game : [Submission](https://codeforces.com/contest/1472/submission/148972474)
+        | Type : Greedy
 
-    >  +) Yet Another Broken Keyboard : [Submission](https://codeforces.com/contest/1272/submission/148974969)
+    >  Yet Another Broken Keyboard : [Submission](https://codeforces.com/contest/1272/submission/148974969)
+        | Type : Implement , Combinatarics
 
-    >   +) Reverse String : [Submission](https://leetcode.com/submissions/detail/656489516/?from=explore&item_id=1440)
+    >   Reverse String : [Submission](https://leetcode.com/submissions/detail/656489516/?from=explore&item_id=1440)
+        | Type : Implement
