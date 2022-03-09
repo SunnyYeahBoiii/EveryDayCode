@@ -6,6 +6,6 @@
 9/3:
     - Đã tải lại osu :(
     - Excersises done:
-        +) Even-Odd Game : https://codeforces.com/contest/1472/submission/148972474
-        +) Yet Another Broken Keyboard : https://codeforces.com/contest/1272/submission/148974969
-        +) Reverse String : https://leetcode.com/submissions/detail/656489516/?from=explore&item_id=1440
+        +) Even-Odd Game : [https://codeforces.com/contest/1472/submission/148972474]
+        +) Yet Another Broken Keyboard : [https://codeforces.com/contest/1272/submission/148974969]
+        +) Reverse String : [https://leetcode.com/submissions/detail/656489516/?from=explore&item_id=1440]
