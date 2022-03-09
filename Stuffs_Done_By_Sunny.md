@@ -1,11 +1,13 @@
 # Stuff Done By Sunny
 
 7/3:
+
     - Bắt đầu tập trung + Xóa hết game trong máy
 
 9/3:
+
     - Đã tải lại osu :(
-        
+
     - Excersises done:
 
         +) Even-Odd Game : [Submission](https://codeforces.com/contest/1472/submission/148972474)
