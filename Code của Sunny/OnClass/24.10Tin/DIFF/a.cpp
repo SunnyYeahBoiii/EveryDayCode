@@ -9,33 +9,30 @@ Code Ideal: I'm too lazy for something like this .__.
 
 using namespace std;
 
-#define NAME "remizdabest"
+#define NAME "DIFF"
 #define fast()   ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 #define FileInput() if(NAME != "remizdabest"){freopen(NAME".inp" , "r" , stdin);freopen(NAME".out" , "w" , stdout);}
 #define int long long
 #define endl "\n"
-#define INF 1 << 30
+#define INF LLONG_MAX
 
 
 void solve(){
+    int n;
+    cin >> n;
 
-	vector<int> c = {1 , 3 , 4};
-	int n = 5;
+    vector<int> minn(n) , a(n);
 
-    vector<int> dp(1000 , 0);
-    
-    dp[0] = 1;
-    for(int i = 1 ; i <= n ; i++){
-        for(int x : c){
-            if(i - x >= 0)
-                dp[i] += dp[i - x];
-        }
+    int res = 0;
+
+    for(int i = 0 ; i < n ; i++){
+        cin >> a[i];
+        minn[i] = min(minn[i-1] , a[i]);
+
+        res = max(a[i] - minn[i] , res);
     }
-    
-    for(int i = 0 ; i <= n ; i++)
-		cout << dp[i] << " ";
-	cout << endl;
 
+    cout << res << endl;
 }
 
 int32_t main(){

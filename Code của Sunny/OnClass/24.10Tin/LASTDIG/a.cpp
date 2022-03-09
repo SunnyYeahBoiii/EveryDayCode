@@ -9,43 +9,41 @@ Code Ideal: I'm too lazy for something like this .__.
 
 using namespace std;
 
-#define NAME "remizdabest"
+#define NAME "lastdig"
 #define fast()   ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 #define FileInput() if(NAME != "remizdabest"){freopen(NAME".inp" , "r" , stdin);freopen(NAME".out" , "w" , stdout);}
 #define int long long
 #define endl "\n"
-#define INF 1 << 30
+#define INF LLONG_MAX
 
+int pow_mod(int a , int b , int m){
+    if(b < 1)
+        return 1;
+    if(b == 1)
+        return a % m;
+    if(b % 2 == 0){
+        int x = pow_mod(a , b / 2 , m);
+        return (x * x) % m;
+    }
+    if(b % 2 == 1){
+        int x = pow_mod(a , b / 2 , m);
+        return (a * ((x * x) % m)) % m;
+    }
+}
 
 void solve(){
-
-	vector<int> c = {1 , 3 , 4};
-	int n = 5;
-
-    vector<int> dp(1000 , 0);
-    
-    dp[0] = 1;
-    for(int i = 1 ; i <= n ; i++){
-        for(int x : c){
-            if(i - x >= 0)
-                dp[i] += dp[i - x];
-        }
-    }
-    
-    for(int i = 0 ; i <= n ; i++)
-		cout << dp[i] << " ";
-	cout << endl;
-
+    int a , b;
+    cin >> a >> b;
+    cout << pow_mod(a , b , 10) << endl;
 }
 
 int32_t main(){
 	FileInput();
 	fast();     
-	/*
+	
 	int t;
     cin >> t;
     while(t--)
-	*/
-	solve();
+	    solve();
 	return 0;	
 }

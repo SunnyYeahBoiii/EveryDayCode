@@ -9,34 +9,41 @@ Code Ideal: I'm too lazy for something like this .__.
 
 using namespace std;
 
-#define NAME "remizdabest"
+#define NAME "ACM"
 #define fast()   ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 #define FileInput() if(NAME != "remizdabest"){freopen(NAME".inp" , "r" , stdin);freopen(NAME".out" , "w" , stdout);}
 #define int long long
 #define endl "\n"
-#define INF 1 << 30
+#define INF LLONG_MAX
 
+struct info{
+    int a , b;
+};
+
+bool cmp1(info& a , info& b){
+    return a.a - a.b < b.a - b.b;
+}
+
+vector<info> a;
 
 void solve(){
+    int n;
+    cin >> n;
+    a.resize(n*2);
 
-	vector<int> c = {1 , 3 , 4};
-	int n = 5;
+    for(int i = 0 ; i < n*2 ; i++)
+        cin >> a[i].a >> a[i].b;
 
-    vector<int> dp(1000 , 0);
-    
-    dp[0] = 1;
-    for(int i = 1 ; i <= n ; i++){
-        for(int x : c){
-            if(i - x >= 0)
-                dp[i] += dp[i - x];
-        }
-    }
-    
-    for(int i = 0 ; i <= n ; i++)
-		cout << dp[i] << " ";
-	cout << endl;
+    sort(a.begin() , a.end() , cmp1);
 
-}
+    int res = 0;
+    for(int i = 0 ; i < n ; i++)
+        res += a[i].a;
+    for(int i = n ; i < 2 * n ; i++)    
+        res += a[i].b;
+
+    cout << res << endl;
+}   
 
 int32_t main(){
 	FileInput();
