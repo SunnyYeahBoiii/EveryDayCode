@@ -28,3 +28,6 @@
 
     >   Petr and a Combination Lock	: [Submission](https://codeforces.com/contest/1097/submission/148988096)
         | Type : Recursion , Bitmasks
+
+    >   Creating the Contest : [Submission](https://codeforces.com/contest/1029/submission/148993362)
+        | Type : DP (Needs Optimization I Tried Sliding Window And It Worked :3)
