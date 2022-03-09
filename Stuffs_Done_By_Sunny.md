@@ -1,4 +1,4 @@
-#Stuff Done By Sunny
+# Stuff Done By Sunny
 
 7/3:
     - Bắt đầu tập trung + Xóa hết game trong máy
