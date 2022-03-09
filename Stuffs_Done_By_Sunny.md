@@ -1,10 +1,10 @@
 # Stuff Done By Sunny
 
-7/3:
+7/3
 
     - Bắt đầu tập trung + Xóa hết game trong máy
 
-9/3:
+9/3
 
     - Đã tải lại osu :(
 
