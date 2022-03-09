@@ -5,7 +5,9 @@
 - Bắt đầu tập trung + Xóa hết game trong máy
 
 - Theo tiêu chí 
-- ![This is an image](/Code%20c%E1%BB%A7a%20Sunny/Images/HSGCMM2.jpg) 
+<p align="center" width="100%">
+<img src="https://raw.githubusercontent.com/SunnyYeahBoiii/EveryDayCode/main/Code%20của%20Sunny/Images/HSGCMM2.jpg" width="400" height="300"  >
+</p>
 
 
 ## 9/3:
@@ -33,6 +35,7 @@
         | Type : Math , Divide And Conquer , Adhoc , Modular , Greedy , Sortings
 
 ###  **- In Conclusion , Today , Sunny Solved 15 Excersises But 10 Of Them Are Easy So Just 5 Were Reconized As Solved.** 
-
+<p align="center" width="100%">
 <img src="https://raw.githubusercontent.com/SunnyYeahBoiii/EveryDayCode/main/Code%20của%20Sunny/Images/GoodJob.jpg" width="400" height="300"  >
+</p>
 
