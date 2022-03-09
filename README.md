@@ -30,3 +30,4 @@
         | Type : DP (Needs Optimization I Tried Sliding Window And It Worked :3)
 
     >   10 More On-Class Excersises : [Code](/Code%20c%E1%BB%A7a%20Sunny/OnClass/24.10Tin)
+        | Type : Math , Divide And Conquer , 
