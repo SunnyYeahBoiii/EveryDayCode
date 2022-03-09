@@ -4,6 +4,9 @@
 
 - Bắt đầu tập trung + Xóa hết game trong máy
 
+- Theo tiêu chí ![This is an image](/Code%20c%E1%BB%A7a%20Sunny/Images/HSGCMM2.jpg) 
+
+
 9/3:
 
 - Đã tải lại osu :(
