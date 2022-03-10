@@ -65,3 +65,9 @@
 
     - > OS : [Code](https://github.com/SunnyYeahBoiii/EveryDayCode/blob/main/Code%20của%20Sunny/OnClass/10.21_22Tin/OS/a.cpp)
         | Type : DP (Needs OPtimization I Tried Bsearch Don't Know It Work Or Not)
+
+### **- Sunny Solved 6 Excersises Today Including 4 Blond to Codeforces and 2 From Sunny's Class. Nice Work, But Need To Be Better Next Day**
+
+<p align="center" width="100%">
+<img src="https://raw.githubusercontent.com/SunnyYeahBoiii/EveryDayCode/main/Code%20của%20Sunny/Images/WD.jpg" width="200" height="200"  >
+</p>
