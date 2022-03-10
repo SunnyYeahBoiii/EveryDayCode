@@ -54,6 +54,9 @@
     
     - >   Penalty : [Submission](https://codeforces.com/contest/1553/submission/149050818)
         | Type : Bitmasks , Recursion
+
+    - >   Delete Two Elements : [Submission](https://codeforces.com/contest/1598/submission/149084211)
+        | Type : Math , Implementation
 - Excersises Not Done Yet:
 
     - > OS : [Code](https://github.com/SunnyYeahBoiii/EveryDayCode/blob/main/Code%20của%20Sunny/OnClass/10.21_22Tin/OS/a.cpp)
