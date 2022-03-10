@@ -48,3 +48,8 @@
 
     > LunarG : [Code](https://github.com/SunnyYeahBoiii/EveryDayCode/blob/main/Code%20của%20Sunny/OnClass/10.21_22Tin/LUNARG/a.cpp)
         | Type : DP , Easy
+        
+- Excersises Not Done Yet:
+
+    > OS : [Code](https://github.com/SunnyYeahBoiii/EveryDayCode/blob/main/Code%20của%20Sunny/OnClass/10.21_22Tin/OS/a.cpp)
+        | Type : DP (Needs OPtimization I Tried Bsearch Don't Know It Work Or Not)
