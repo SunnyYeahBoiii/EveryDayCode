@@ -50,13 +50,17 @@
         | Type : DP , Easy
         
     - >   Replace and Keep Sorted : [Submission](https://codeforces.com/contest/1485/submission/149045734)
-        | Type : PrefixSum , Math
+        | Type : DP , Math
     
     - >   Penalty : [Submission](https://codeforces.com/contest/1553/submission/149050818)
         | Type : Bitmasks , Recursion
 
     - >   Delete Two Elements : [Submission](https://codeforces.com/contest/1598/submission/149084211)
         | Type : Math , Implementation
+
+    - > Lecture Sleep : [Submission](https://codeforces.com/contest/961/submission/149087392)
+        | Type : Implementation , DP 
+        
 - Excersises Not Done Yet:
 
     - > OS : [Code](https://github.com/SunnyYeahBoiii/EveryDayCode/blob/main/Code%20của%20Sunny/OnClass/10.21_22Tin/OS/a.cpp)
