@@ -1,5 +1,5 @@
-# **Informations:**
-## Sunny 
+# **Collaboraters:**
+##  ⭐ Sunny 
 
   - Sunny's README file : [LINK](https://github.com/SunnyYeahBoiii/EveryDayCode/blob/main/Code%20của%20Sunny/README.md)
 
@@ -26,17 +26,18 @@
 
 # **CP-Websites:**
 
->[VNOI](https://oj.vnoi.info/problems/)
 
->[Codeforces](https://codeforces.com)
+  - >[VNOI](https://oj.vnoi.info/problems/)
 
->[Leetcode](https://leetcode.com)
+  - >[Codeforces](https://codeforces.com)
 
->[GeeksForGeeks](https://www.geeksforgeeks.org)
+  - >[Leetcode](https://leetcode.com)
 
->[CSES](https://cses.fi/problemset/)
+  - >[GeeksForGeeks](https://www.geeksforgeeks.org)
 
->[FreeContest's Website](https://freecontest.net)
+  - >[CSES](https://cses.fi/problemset/)
 
->[USACO](https://usaco.guide/bronze/complete-rec?lang=cpp)
+  - >[FreeContest's Website](https://freecontest.net)
+
+  - >[USACO](https://usaco.guide/bronze/complete-rec?lang=cpp)
 
