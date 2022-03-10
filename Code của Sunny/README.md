@@ -43,4 +43,5 @@
 ## 10/3:
 - Excersises Done:
 
-    > MouseW : [Link]()
+    > MouseW : [Link](https://github.com/SunnyYeahBoiii/EveryDayCode/blob/main/Code%20của%20Sunny/OnClass/10.21Tin/MouseW/a.cpp)
+        | Type : Implementation , PrefixSum , Easy
