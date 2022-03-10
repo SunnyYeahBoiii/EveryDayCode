@@ -16,25 +16,20 @@ using namespace std;
 #define endl "\n"
 #define INF 1 << 30
 
+bool cmp(pair<int , int> a,  pair<int , int> b){
+    if(a.second == b.second)
+        return a.first < b.first;
+    return a.second < b.second;
+}
 
 void solve(){
 
-	vector<int> c = {1 , 3 , 4};
-	int n = 5;
+    vector<pair<int , int>> s = {{2 , 3},{3 , 3},{1 , 3}};
 
-    vector<int> dp(1000 , 0);
-    
-    dp[0] = 1;
-    for(int i = 1 ; i <= n ; i++){
-        for(int x : c){
-            if(i - x >= 0)
-                dp[i] += dp[i - x];
-        }
-    }
-    
-    for(int i = 0 ; i <= n ; i++)
-		cout << dp[i] << " ";
-	cout << endl;
+    sort(s.begin() , s.end() , cmp);
+
+    for(int i = 0 ; i < s.size() ; i++)
+        cout << s[i].first << " " << s[i].second << endl;;
 
 }
 
