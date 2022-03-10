@@ -18,7 +18,7 @@
 
 ## Kyjro
 
-  - Kyjro's README file : [LINK]()
+  - Kyjro's README file : [LINK](https://github.com/SunnyYeahBoiii/EveryDayCode/blob/main/Code%20đéo%20phải%20của%20Kyjro/README.md)
 
 # **CP-Websites:**
 
