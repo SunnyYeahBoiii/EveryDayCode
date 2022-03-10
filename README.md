@@ -20,7 +20,7 @@
 
   - Kyjro's README file : [LINK]()
 
-# Favourite CP-Website:
+# **CP-Website:**
 
 >[VNOI](https://oj.vnoi.info/problems/)
 
@@ -35,5 +35,4 @@
 >[FreeContest's Website](https://freecontest.net)
 
 >[USACO](https://usaco.guide/bronze/complete-rec?lang=cpp)
-
 
