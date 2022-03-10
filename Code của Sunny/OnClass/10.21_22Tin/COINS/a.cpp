@@ -14,23 +14,33 @@ using namespace std;
 #define FileInput() if(NAME != "remizdabest"){freopen(NAME".inp" , "r" , stdin);freopen(NAME".out" , "w" , stdout);}
 #define int long long
 #define endl "\n"
-#define INF 1 << 30
+#define INF LLONG_MAX
 
-bool cmp(pair<int , int> a,  pair<int , int> b){
-    if(a.second == b.second)
-        return a.first < b.first;
-    return a.second < b.second;
+bool cmp(pair<int , int> a , pair<int , int> b){
+    return a.second - a.first > b.second - b.first;
 }
 
 void solve(){
 
-    vector<pair<int , int>> s = {{2 , 3},{3 , 3},{1 , 3}};
+    int n , m;
+    cin >> n >> m;
 
-    sort(s.begin() , s.end() , cmp);
+    vector<pair<int , int>> a(n);
 
-    for(int i = 0 ; i < s.size() ; i++)
-        cout << s[i].first << " " << s[i].second << endl;;
+    int u , v , res = 0;
+    for(int i = 0 ; i < n ; i++)
+        cin >> a[i].first;
 
+    for(int i =  0 ; i < n ; i++)
+        cin >> a[i].second;
+
+    sort(a.begin() , a.end() , cmp);
+
+    int res = 0;
+
+    for(int i = 0 ; i < n ; i++){
+        
+    }
 }
 
 int32_t main(){
