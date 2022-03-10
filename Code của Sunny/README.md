@@ -5,7 +5,9 @@
 - Bắt đầu tập trung + Xóa hết game trong máy
 
 - Theo tiêu chí 
-- ![This is an image](/Code%20c%E1%BB%A7a%20Sunny/Images/HSGCMM2.jpg) 
+<p align="center" width="100%">
+<img src="https://raw.githubusercontent.com/SunnyYeahBoiii/EveryDayCode/main/Code%20của%20Sunny/Images/HSGCMM2.jpg" width="400" height="300"  >
+</p>
 
 
 ## 9/3:
@@ -31,3 +33,15 @@
 
     >   10 More On-Class Excersises : [Code](/Code%20c%E1%BB%A7a%20Sunny/OnClass/24.10Tin)
         | Type : Math , Divide And Conquer , Adhoc , Modular , Greedy , Sortings
+
+###  **- In Conclusion , Today , Sunny Solved 15 Excersises.** 
+<p align="center" width="100%">
+<img src="https://raw.githubusercontent.com/SunnyYeahBoiii/EveryDayCode/main/Code%20của%20Sunny/Images/GoodJob.jpg" width="400" height="300"  >
+</p>
+
+
+## 10/3:
+- Excersises Done:
+
+    > MouseW : [Code](https://github.com/SunnyYeahBoiii/EveryDayCode/blob/main/Code%20của%20Sunny/OnClass/10.21Tin/MouseW/a.cpp)
+        | Type : Implementation , PrefixSum , Easy
