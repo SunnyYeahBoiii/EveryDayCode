@@ -18,7 +18,6 @@
 
 ## Kyjro
 
-<<<<<<< HEAD
   - Kyjro's README file : [LINK]()
 
 # Favourite CP-Website:
@@ -36,6 +35,5 @@
 >[FreeContest's Website](https://freecontest.net)
 
 >[USACO](https://usaco.guide/bronze/complete-rec?lang=cpp)
-=======
-  - Kyjro's README file : [LINK](https://github.com/SunnyYeahBoiii/EveryDayCode/blob/main/Code%20đéo%20phải%20của%20Kyjro/README.md)
->>>>>>> 53526b8f89b7fdaa90db7b24e95406b155226fcb
+
+
