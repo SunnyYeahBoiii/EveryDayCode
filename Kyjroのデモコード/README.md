@@ -1,7 +1,5 @@
 ## やあお会いできて、 嬉 しいです, 私の名前はkyjroですそして私は自殺したい人です
 
-## osu! profile : [kyjro](https://osu.ppy.sh/users/27262557)
-
 # ニュース
 
 ## 3月10日
