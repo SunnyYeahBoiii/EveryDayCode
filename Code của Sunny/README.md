@@ -52,6 +52,8 @@
     >   Replace and Keep Sorted : [Submission](https://codeforces.com/contest/1485/submission/149045734)
         | Type : PrefixSum , Math
     
+    >   Penalty : [Submission](https://codeforces.com/contest/1553/submission/149050818)
+        | Type : Bitmasks , Recursion
 - Excersises Not Done Yet:
 
     > OS : [Code](https://github.com/SunnyYeahBoiii/EveryDayCode/blob/main/Code%20của%20Sunny/OnClass/10.21_22Tin/OS/a.cpp)
