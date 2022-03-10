@@ -20,7 +20,7 @@
 
   - Kyjro's README file : [LINK]()
 
-# **CP-Website:**
+# **CP-Websites:**
 
 >[VNOI](https://oj.vnoi.info/problems/)
 
