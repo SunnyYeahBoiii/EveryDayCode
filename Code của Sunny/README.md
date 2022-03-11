@@ -82,4 +82,5 @@
     >   Block Adventure : [Submission](https://codeforces.com/contest/1200/submission/149202111)
         | Type : Greedy
 
-        
+    >   Restricted RPS : [Submission](https://codeforces.com/contest/1245/submission/149204338)
+        | Typer : Greedy
