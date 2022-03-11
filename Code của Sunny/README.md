@@ -83,4 +83,8 @@
         | Type : Greedy
 
     >   Restricted RPS : [Submission](https://codeforces.com/contest/1245/submission/149204338)
-        | Typer : Greedy
+        | Type : Greedy
+
+    >   Missing Bigram : [Submission](https://codeforces.com/contest/1618/submission/149223624)
+        | Type : Strings , Implementation
+        | Upsolved
