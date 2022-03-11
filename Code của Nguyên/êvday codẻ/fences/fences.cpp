@@ -7,16 +7,18 @@
 #define pll pair<long long, long long>
 #define F first
 #define S second
-#define fast {ios_base::sync_with_stdio(false);cin.tie(NULL);}
 typedef unsigned long long int ull;
 typedef long long ll;
 const long N=1e5 + 5;
 using namespace std;
 void solve(){
-
+    long n, m;
+    cin >> n >> m;
+    cout << (n * (m + 1) + (n + 1) * m) ;
 }
 int main(){
-    fast;
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
     // freopen(".inp","r",stdin);
     // freopen(".out","w",stdout);
     solve();  
