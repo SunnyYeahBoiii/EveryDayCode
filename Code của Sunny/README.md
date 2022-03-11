@@ -76,5 +76,10 @@
 
 - Excersises Done:
 
-    - Reposts : [Code](https://codeforces.com/contest/522/submission/149198916)
+    >   Reposts : [Code](https://codeforces.com/contest/522/submission/149198916)
         | Type : DP , DFS
+
+    >   Block Adventure : [Submission](https://codeforces.com/contest/1200/submission/149202111)
+        | Type : Greedy
+
+        
