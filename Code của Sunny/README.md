@@ -88,3 +88,6 @@
     >   Missing Bigram : [Submission](https://codeforces.com/contest/1618/submission/149223624)
         | Type : Strings , Implementation
         | Upsolved
+
+    >    Polycarp Recovers the Permutation : [Submission](https://codeforces.com/contest/1611/submission/149229213)
+        | Type : Data Structue | Upsolved
