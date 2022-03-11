@@ -13,5 +13,5 @@
 có lẽ việc bỏ game đã khiến tôi quên mất tôi là ai, điều tôi muốn làm là gì, thế giới này được hoạt động như thế nào, game là 1 phần trong tôi rồi, cuộc sống
 thiếu game với tôi là điều không thể.
 
-         ----  NGÀY TÔI EM XA TÔI, THẾ GIỚI NHƯ QUAY LƯNG LẠI VỚI TÔI VẬY ----
-          ---- NGÀY TÔI GẶP LẠI EM, EM VẪN TUYỆT VỜI NHƯ NGÀY TÔI MẤT EM ----
+                  ----  NGÀY TÔI EM XA TÔI, THẾ GIỚI NHƯ QUAY LƯNG LẠI VỚI TÔI VẬY ----
+                      ---- NGÀY TÔI GẶP LẠI EM, EM VẪN TUYỆT VỜI NHƯ NGÀY ẤY ----
