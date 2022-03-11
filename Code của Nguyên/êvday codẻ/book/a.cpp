@@ -13,7 +13,19 @@ typedef long long ll;
 const long N=1e5 + 5;
 using namespace std;
 void solve(){
-
+    int n;
+    cin >> n;
+    vector<int> a(n);
+    FOR (i, 0 ,n - 1)
+        cin >> a[i];
+    sort(a.begin() ,a.end() , greater<int>());
+    int res = 0;
+    for(int i = 0 ; i < n ; i += 3){
+        res += a[i];
+        if(i+1 < n)
+            res += a[i+1];
+    }
+    cout << res << endl;
 }
 int main(){
     fast;

@@ -43,7 +43,7 @@
 ## 10/3:
 - Excersises Done:
 
-    - > MouseW : [Code](https://github.com/SunnyYeahBoiii/EveryDayCode/blob/main/Code%20của%20Sunny/OnClass/10.21Tin/MouseW/a.cpp)
+    - > MouseW : [Code](https://github.com/SunnyYeahBoiii/EveryDayCode/blob/main/Code%20của%20Sunny/OnClass/10.21_22Tin/MouseW/a.cpp)
         | Type : Implementation , PrefixSum , Easy
 
     - > LunarG : [Code](https://github.com/SunnyYeahBoiii/EveryDayCode/blob/main/Code%20của%20Sunny/OnClass/10.21_22Tin/LUNARG/a.cpp)
@@ -65,3 +65,21 @@
 
     - > OS : [Code](https://github.com/SunnyYeahBoiii/EveryDayCode/blob/main/Code%20của%20Sunny/OnClass/10.21_22Tin/OS/a.cpp)
         | Type : DP (Needs OPtimization I Tried Bsearch Don't Know It Work Or Not)
+
+### **- Sunny Solved 6 Excersises Today Including 4 Belongs to Codeforces and 2 From Sunny's Class. Nice Work, But Need To Be Better Next Day**
+
+<p align="center" width="100%">
+<img src="https://raw.githubusercontent.com/SunnyYeahBoiii/EveryDayCode/main/Code%20của%20Sunny/Images/WD.jpg" width="200" height="200"  >
+</p>
+
+## 11/3:
+
+- Excersises Done:
+
+    >   Reposts : [Code](https://codeforces.com/contest/522/submission/149198916)
+        | Type : DP , DFS
+
+    >   Block Adventure : [Submission](https://codeforces.com/contest/1200/submission/149202111)
+        | Type : Greedy
+
+        

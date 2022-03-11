@@ -11,10 +11,29 @@
 typedef unsigned long long int ull;
 typedef long long ll;
 const long N=1e5 + 5;
-using namespace std;
-void solve(){
+using namespace std;/*
 
+struct info{
+    int a , b;
+};
+bool cmp1(info& a , info& b){
+    return a.a - a.b < b.a - b.b;
 }
+vector<info> a;
+void solve(){
+    int n;
+    cin >> n;
+    a.resize(n*2);
+    FOR ( i , 0 , (n*2) - 1)
+        cin >> a[i].a >> a[i].b;
+    sort(a.begin() , a.end() , cmp1);
+    int res = 0;
+    FOR ( i , 0 , n-1)
+        res += a[i].a;
+    FOR ( i , 0 , (2*n -1) )
+        res += a[i].b;
+    cout << res << endl;
+}*/
 int main(){
     fast;
     // freopen(".inp","r",stdin);
