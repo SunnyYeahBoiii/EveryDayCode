@@ -43,7 +43,7 @@
 ## 10/3:
 - Excersises Done:
 
-    - > MouseW : [Code](https://github.com/SunnyYeahBoiii/EveryDayCode/blob/main/Code%20của%20Sunny/OnClass/10.21Tin/MouseW/a.cpp)
+    - > MouseW : [Code](https://github.com/SunnyYeahBoiii/EveryDayCode/blob/main/Code%20của%20Sunny/OnClass/10.21_22Tin/MouseW/a.cpp)
         | Type : Implementation , PrefixSum , Easy
 
     - > LunarG : [Code](https://github.com/SunnyYeahBoiii/EveryDayCode/blob/main/Code%20của%20Sunny/OnClass/10.21_22Tin/LUNARG/a.cpp)
@@ -71,7 +71,6 @@
 <p align="center" width="100%">
 <img src="https://raw.githubusercontent.com/SunnyYeahBoiii/EveryDayCode/main/Code%20của%20Sunny/Images/WD.jpg" width="200" height="200"  >
 </p>
-
 
 ## 11/3:
 
