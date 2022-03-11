@@ -25,7 +25,7 @@
 ## Kyjro
 
 
-  - KyjroのREADMEファイル: [LINK](https://github.com/SunnyYeahBoiii/EveryDayCode/blob/main/Code%20đéo%20phải%20của%20Kyjro/README.md)
+  - KyjroのREADMEファイル: [LINK](https://github.com/SunnyYeahBoiii/EveryDayCode/blob/main/Kyjro%E3%81%AE%E3%83%87%E3%83%A2%E3%82%B3%E3%83%BC%E3%83%89/README.md)
   - おす！プロフィール : [kyjro](https://osu.ppy.sh/users/27262557)
 
 
