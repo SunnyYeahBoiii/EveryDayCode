@@ -71,3 +71,11 @@
 <p align="center" width="100%">
 <img src="https://raw.githubusercontent.com/SunnyYeahBoiii/EveryDayCode/main/Code%20của%20Sunny/Images/WD.jpg" width="200" height="200"  >
 </p>
+
+
+## 11/3:
+
+- Excersises Done:
+
+    - Reposts : [Code](https://codeforces.com/contest/522/submission/149198916)
+        | Type : DP , DFS
