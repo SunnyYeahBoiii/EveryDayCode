@@ -76,18 +76,28 @@
 
 - Excersises Done:
 
-    >   Reposts : [Code](https://codeforces.com/contest/522/submission/149198916)
+    - >   Reposts : [Code](https://codeforces.com/contest/522/submission/149198916)
         | Type : DP , DFS
 
-    >   Block Adventure : [Submission](https://codeforces.com/contest/1200/submission/149202111)
+    - >   Block Adventure : [Submission](https://codeforces.com/contest/1200/submission/149202111)
         | Type : Greedy
 
-    >   Restricted RPS : [Submission](https://codeforces.com/contest/1245/submission/149204338)
+    - >   Restricted RPS : [Submission](https://codeforces.com/contest/1245/submission/149204338)
         | Type : Greedy
 
-    >   Missing Bigram : [Submission](https://codeforces.com/contest/1618/submission/149223624)
+    - >Missing Bigram : [Submission](https://codeforces.com/contest/1618/submission/149223624)
         | Type : Strings , Implementation
         | Upsolved
 
-    >    Polycarp Recovers the Permutation : [Submission](https://codeforces.com/contest/1611/submission/149229213)
+    -   > Polycarp Recovers the Permutation : [Submission](https://codeforces.com/contest/1611/submission/149229213)
         | Type : Data Structue | Upsolved
+
+- Took part in [Codeforces Round #777 (Div. 2)](https://codeforces.com/contest/1647) and got 1 of them AC 
+    -   > Madoka and Math Dad : [Submission](https://codeforces.com/contest/1647/submission/149275999)
+        | Type : Greedy , Implementation
+
+<p align="center" width="100%">
+<img src="https://raw.githubusercontent.com/SunnyYeahBoiii/EveryDayCode/main/Code%20của%20Sunny/Images/sadcat.jpg" width="200" height="200"  >
+</p>
+
+- Sunny Solved 6 Excersises Today, Yay
