@@ -1,46 +1,75 @@
-// Link : 
-// Author : MinhPhuongVu A.K.A SunnyYeahBoii
+#include <bits/stdc++.h>
 
-/* 
-Code Ideal: I'm too lazy for something like this .__.
-*/
-
-#include "bits/stdc++.h"
+#pragma comment(linker, "/stack:227420978")
+#pragma GCC optimize("Ofast")
+#pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,tune=native")
 
 using namespace std;
 
-#define NAME "remizdabest"
-#define fast()   ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
-#define FileInput() if(NAME != "remizdabest"){freopen(NAME".inp" , "r" , stdin);freopen(NAME".out" , "w" , stdout);}
-#define int long long
-#define endl "\n"
-#define INF 1 << 30
+string res[50006];
 
-bool cmp(pair<int , int> a,  pair<int , int> b){
-    if(a.second == b.second)
-        return a.first < b.first;
-    return a.second < b.second;
+int stringToNum(char c)		// chuyen char sang so
+{
+	return c - '0';
+}
+
+char numToString(int n)		// chuyen so sang char
+{
+	return (char)(n+48);
+}
+
+void chuanHoa(string &a, string &b)	// lam 2 xau co do dai bang nhau
+{
+	int l1 = a.length(), l2 = b.length();
+	if (l1 >= l2)
+	{
+		b.insert(0, l1-l2, '0');	// chen vao dau cua b cac ky tu '0'
+	}
+	else
+	{
+		a.insert(0, l2-l1, '0');	// chen vao dau cua a cac ky tu '0'
+	}
+}
+
+string sum(string a, string b)	// tong 2 so
+{
+	string s = "";
+	chuanHoa(a,b);		// chuan hoa
+	int l = a.length();
+
+	int temp = 0;
+	for (int i=l-1; i>=0; i--)	// duyet va cong
+	{
+		temp = stringToNum(a[i]) + stringToNum(b[i]) + temp;	// tinh tong tung doi mot
+		s.insert(0,1,numToString(temp%10));			// gan phan don vi vao
+		temp = temp/10;		// lay lai phan hang chuc
+	}
+	if (temp>0)	// neu hang chuc > 0 thi them vao KQ
+	{
+		s.insert(0,1,numToString(temp));
+	}
+	return s;
+}
+
+
+void init(){
+	res[1] = "1";
+	res[2] = "2";
+	for(int i = 3 ; i <= 50005 ; i++){
+		res[i] = sum(res[i-1] , res[i-2]);
+	}
 }
 
 void solve(){
-
-    vector<pair<int , int>> s = {{2 , 3},{3 , 3},{1 , 3}};
-
-    sort(s.begin() , s.end() , cmp);
-
-    for(int i = 0 ; i < s.size() ; i++)
-        cout << s[i].first << " " << s[i].second << endl;;
-
+	int n;
+	cin >> n;
+	cout << res[n] << endl;
 }
 
-int32_t main(){
-	FileInput();
-	fast();     
-	/*
+int main(){
 	int t;
-    cin >> t;
-    while(t--)
-	*/
-	solve();
-	return 0;	
+	init();
+	cin >> t;
+	while(t--) solve();
+	return 0;
 }
