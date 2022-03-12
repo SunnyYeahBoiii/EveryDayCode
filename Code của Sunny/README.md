@@ -101,4 +101,6 @@
 </p>
 
 - Sunny Solved 6 Excersises Today, Yay
-- ![](https://raw.githubusercontent.com/SunnyYeahBoiii/EveryDayCode/main/Code%20của%20Sunny/Images/well-done-human.png)
+<p align="center" width="100%">
+<img src="https://raw.githubusercontent.com/SunnyYeahBoiii/EveryDayCode/main/Code%20của%20Sunny/Images/well-done-human.png" width="400" height="300"  >
+</p>
