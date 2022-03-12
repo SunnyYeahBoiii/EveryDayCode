@@ -9,66 +9,63 @@ Code Ideal: I'm too lazy for something like this .__.
 
 using namespace std;
 
-#define NAME "os"
+#define NAME "remizdabest"
 #define fast()   ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 #define FileInput() if(NAME != "remizdabest"){freopen(NAME".inp" , "r" , stdin);freopen(NAME".out" , "w" , stdout);}
 #define int long long
 #define endl "\n"
 #define INF LLONG_MAX
 
-struct data{
-    int a , b;
+struct info{
+    int x , y;
 };
 
-bool cmp(data& a , data& b){
-    if(a.b == b.b)
-        return a.a < b.a;
-    else return a.b < b.b;
+vector<info> a;
+vector<int> dp , maxx;
+int n;
+
+bool cmp(info a,  info b){
+    if(a.x == b.x)
+        return a.y < b.y;
+    return a.x < b.x;
+}
+
+int bs(int g , int x){
+    int l = g , r = n-1 , mid , best = INF;
+    while(l <= r){
+        mid = (l + r) / 2;
+        if(a[mid].x > x){
+            r = mid - 1;
+            best = min(mid , best);
+        }else l = mid + 1;
+    }
+
+    return (best == INF) ? -1 : best;
 }
 
 void solve(){
+    cin >> n;
 
-    int m , n;
-    cin >> m >> n;
-
-    vector<data> d(n);
-
+    a.resize(n);
     for(int i = 0 ; i < n ; i++)
-        cin >> d[i].a >> d[i].b;
+        cin >> a[i].x >> a[i].y;
 
-    sort(d.begin() , d.end() , cmp);
+    sort(a.begin() , a.end() , cmp);    
+    dp.resize(n);
+    maxx.resize(n);
+    dp[n-1] = a[n-1].y - a[n-1].x;
+    maxx[n-1] = dp[n-1];
 
-    vector<int> f;
-    int res = 1;
-    f.push_back(0);
-
-    for(int i = 1 ; i < n ; i++){
-        if(d[f.back()].b < d[i].a){
-            f.push_back(i);
-            res++;
-            continue;
-        }
-
-        int l = 0 , r = f.size()-1 , mid , best = 0;
-
-        while(l <= r){
-            int mid = (l + r) / 2;
-            /*if(mid == f.size() -1 && d[f[mid-1]].b < d[i].a)
-                best = mid;
-            else if(mid == 0 && d[f[mid+1]].a > d[i].b)
-                best = mid;
-            else */ 
-            if(d[f[mid]].b <= d[i].a && d[f[mid+1]].a > d[i].b)
-                best = mid;
-            else if(d[f[mid]].b < d[i].a)
-                l = mid + 1;
-            else r = mid - 1;
-        }
-
-        f[best] = res;
+    for(int i = n-2 ; i >= 0 ; i--){
+        int idx = bs(i+1 , a[i].y);
+        if(idx == -1)
+            dp[i] = a[i].y - a[i].x;
+        else
+            dp[i] = maxx[idx] + a[i].y - a[i].x;
+        maxx[i] = max(dp[i] , maxx[i+1]);
     }
 
-    cout << f.size() << endl;
+    cout << *max_element(dp.begin() , dp.end()) << endl;
 }
 
 int32_t main(){

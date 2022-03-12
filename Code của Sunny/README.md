@@ -104,3 +104,19 @@
 <p align="center" width="100%">
 <img src="https://raw.githubusercontent.com/SunnyYeahBoiii/EveryDayCode/main/Code%20của%20Sunny/Images/well-done-human.png" width="400" height="300"  >
 </p>
+
+
+## 12/3:
+    
+- Excersises Done:
+
+    >   - OS : [Code](/Code%20c%E1%BB%A7a%20Sunny/OnClass/10.21_22Tin/OS/a.cpp)
+        | Type : DP (Needs Optimization I Tried Bsearch)
+
+**-Sunny Just Had a Test At School And He Did It Pretty Good. Yay Sunny. But Sadly, He Decided To Have A Day Break And Only Did 1 Exercise Because He Is Tired.**
+
+<p align="center" width="100%">
+<img src="https://raw.githubusercontent.com/SunnyYeahBoiii/EveryDayCode/main/Code%20của%20Sunny/Images/pepesad.png" width="400" height="400"  >
+</p>
+
+

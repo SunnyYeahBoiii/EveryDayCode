@@ -34,7 +34,7 @@ int bs(int g , int x){
     int l = g , r = n-1 , mid , best = INF;
     while(l <= r){
         mid = (l + r) / 2;
-        if(a[mid].x >= x){
+        if(a[mid].x > x){
             r = mid - 1;
             best = min(mid , best);
         }else l = mid + 1;
