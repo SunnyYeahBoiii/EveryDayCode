@@ -25,7 +25,7 @@ void solve(){
 
     for(int i = 0 ; i < n ; i++)
         cin >> a[i];
-
+	// Testing on WSL 
     for(int i = 0 ; i < n-1 ; i++){
         if(a[i+1] - a[i] <= k){
             if(a[i+1] - k > 0) m += a[i] - a[i+1] + k;
