@@ -7,10 +7,9 @@
 - C++ Code:
 
 ```c++
-    int n;
-	cin >> n;
+double fibo(int n){
 	double a = (1 + sqrt(5)) / 2 , b = (1 - sqrt(5)) / 2;
 	double number = (pow(a , n) - (pow(b , n))) / sqrt(5);
-
-	cout << number << endl;
+	return n;
+}
 ```
