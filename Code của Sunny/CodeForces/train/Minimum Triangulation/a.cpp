@@ -9,35 +9,26 @@ Code Ideal: I'm too lazy for something like this .__.
 
 using namespace std;
 
-#define NAME "C"
+#define NAME "remizdabest"
 #define fast()   ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 #define FileInput() if(NAME != "remizdabest"){freopen(NAME".inp" , "r" , stdin);freopen(NAME".out" , "w" , stdout);}
-//#define int long long
+#define int long long
 #define endl "\n"
 #define INF LLONG_MAX
 
+
 void solve(){
 
-	int n;
-	cin >> n;
-	vector<int> a(n);
-	for(int i = 0 ; i < n ; i++){
-		cin >> a[i];
-		a[i] = a[i] % 200;
-	}
+    int n;
+    cin >> n;
 
-	//for(int i = 0 ; i < n ; i++)
-	//	cout << a[i] << " ";
-	//cout << endl;
+    int res = 0;
 
-	map<int , int> cnt;
-	int res = 0;
-	for(int i = 0 ; i < n ; i++){
-		res += cnt[a[i]];
-		cnt[a[i]]++;
-	}
+    for(int i = 2 ; i < n ; i++)
+        res += i * (i + 1);
 
-	cout << res << endl;
+    cout << res << endl;
+
 }
 
 	int32_t main(){
