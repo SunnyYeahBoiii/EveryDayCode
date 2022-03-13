@@ -121,8 +121,12 @@
 
 ## 13/3:
 
-- Excersises Done:
+- Excersise Done:
     - > Minimum Triangulation : [Submission](https://codeforces.com/contest/1140/submission/149510635)
         | Type : Implementation , Math
 
-        
+- Today, Sunny read about Fermat's Little Theroem, Extended Euclidean Algorithm don't understand much but Sunny will read more tomorrow.
+
+<p align="center" width="100%">
+<img src="https://raw.githubusercontent.com/SunnyYeahBoiii/EveryDayCode/main/Code%20của%20Sunny/Images/Screen_Shot_2019-09-05_at_4.08.58_PM.jpg" width="400" height="250"  >
+</p>
