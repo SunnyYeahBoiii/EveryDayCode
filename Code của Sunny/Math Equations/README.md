@@ -1,5 +1,8 @@
 ## - N-th Fibonacci Number in O(1) : 
-![](https://github.com/SunnyYeahBoiii/EveryDayCode/blob/main/Code%20c%E1%BB%A7a%20Sunny/Images/Fibonacci_Formula.png?raw=true)
+
+<p align="center" width="100%">
+<img src="https://github.com/SunnyYeahBoiii/EveryDayCode/blob/main/Code%20c%E1%BB%A7a%20Sunny/Images/Fibonacci_Formula.png?raw=true">
+</p>
 
 - C++ Code:
 
