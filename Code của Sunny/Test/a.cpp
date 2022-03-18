@@ -17,12 +17,11 @@ using namespace std;
 #define INF LLONG_MAX
 
 void solve(){
-	int n;
-	cin >> n;
-	double a = (1 + sqrt(5)) / 2 , b = (1 - sqrt(5)) / 2;
-	double number = (pow(a , n) - (pow(b , n))) / sqrt(5);
 
-	cout << number << endl;
+	map<int , int> x;
+	x[INF * 10]++;
+	cout << x[INF*10] << endl;
+	cout << INF * 10 << endl;
 }
 
 	int32_t main(){
