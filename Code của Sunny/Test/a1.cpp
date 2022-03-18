@@ -15,8 +15,6 @@ struct info{
     int w , h;
 };
 bool cmp(pair<int , int> a , pair<int , int> b){
-    if(a.first == b.first)
-        return a.second > b.second;
     return a.first < b.first;
 }
 vector<info> a;
@@ -38,9 +36,9 @@ struct seg{
         return get(1 , 0 , n-1 , x);
     }
     int get(int vt , int l , int r , int x){
-        if(r < x)
+        if(l > x)
             return 0;
-        if(l >= x){
+        if(r <= x){
             return tree[vt];
         }
         int mid = (l + r) / 2;
@@ -81,7 +79,7 @@ void solve(){
     for(int i = 0 ; i < n ; i++){
         cin >> a[i].w >> a[i].h;
     }
-    //reverse(a.begin() , a.end());
+    reverse(a.begin() , a.end());
     for(int i = 0 ; i < n ; i++){
         b[i].first = a[i].w;
         b[i].second = i;
@@ -89,15 +87,21 @@ void solve(){
     sort(b.begin() , b.end() , cmp);
     for(int i = 0 ; i < n ; i++)
         newidx[b[i].second] = i;
+    //reverse(newidx.begin() , newidx.end());
+
+    for(int i = 0 ; i < n ; i++)
+        cout << a[i].w << " " << a[i].h << " " << newidx[i] << endl;
 
     int res = 0;
     seg segg;
     segg.init(n);
     segg.update(newidx[0] , a[0].h);
     for(int i = 1 ; i < n ; i++){
-        int x = segg.get(newidx[i] + 1);
+        int x = segg.get(newidx[i]-1);
         res = max(res , x + a[i].h);
         segg.update(newidx[i] , x + a[i].h);
+        //segg.print();
+        //cout << endl << endl;;
     }
     cout << res << endl;
 }
