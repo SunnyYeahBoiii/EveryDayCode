@@ -15,3 +15,10 @@ thiếu game với tôi là điều không thể.
 
                   ----  NGÀY TÔI EM XA TÔI, THẾ GIỚI NHƯ QUAY LƯNG LẠI VỚI TÔI VẬY ----
                       ---- NGÀY TÔI GẶP LẠI EM, EM VẪN TUYỆT VỜI NHƯ NGÀY ẤY ----
+                    
+## 12/3 :
+- Tôi đã có một buổi test hôm nay, mặc dù không được tốt but i try my best. Nice try, after that i play valorant for 3hours :( and 2 hours with lol. ... 
+
+## 13/3 :
+
+- Quay lại cuộc sống thường ngày bằng cách đón ánh bình minh vào lúc 10h30 sáng, phải chép địa và làm sử :( . Don't do any exercise 2 days.

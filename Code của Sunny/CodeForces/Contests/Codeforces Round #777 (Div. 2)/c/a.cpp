@@ -12,20 +12,16 @@ using namespace std;
 #define NAME "remizdabest"
 #define fast()   ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 #define FileInput() if(NAME != "remizdabest"){freopen(NAME".inp" , "r" , stdin);freopen(NAME".out" , "w" , stdout);}
-//#define int long long
+#define int long long
 #define endl "\n"
 #define INF LLONG_MAX
 
-void solve(){
-	int n;
-	cin >> n;
-	double a = (1 + sqrt(5)) / 2 , b = (1 - sqrt(5)) / 2;
-	double number = (pow(a , n) - (pow(b , n))) / sqrt(5);
 
-	cout << number << endl;
+void solve(){
+
 }
 
-	int32_t main(){
+int32_t main(){
 	FileInput();
 	fast();     
 	/*

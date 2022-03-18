@@ -14,7 +14,14 @@ const long N=1e5 + 5;
 const int mod = 1e9 +7;
 using namespace std;
 void solve(){
-
+    int n,dp[N][N],k;
+    cin >> n >> k;
+    FOR (i,0,n){
+        dp[i][0] = 1;
+        dp[i][i] = 0;
+        FOR(j,1,i-1) dp[i][j] = (dp[i-1][j] + dp[i-1][j-1]) & mod;   
+    }
+    cout << dp[n][k];
 }
 int main(){
     fast;

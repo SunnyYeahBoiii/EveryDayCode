@@ -32,7 +32,7 @@
         | Type : DP (Needs Optimization I Tried Sliding Window And It Worked :3)
 
     - >   10 More On-Class Excersises : [Code](/Code%20c%E1%BB%A7a%20Sunny/OnClass/24.10Tin)
-        | Type : Math , Divide And Conquer , Adhoc , Modular , Greedy , Sortings
+        | Type : Math , Divide And Conquer , Adhoc , Greedy , Sortings
 
 ###  **- In Conclusion , Today , Sunny Solved 15 Excersises.** 
 <p align="center" width="100%">
@@ -76,18 +76,57 @@
 
 - Excersises Done:
 
-    >   Reposts : [Code](https://codeforces.com/contest/522/submission/149198916)
+    - >   Reposts : [Code](https://codeforces.com/contest/522/submission/149198916)
         | Type : DP , DFS
 
-    >   Block Adventure : [Submission](https://codeforces.com/contest/1200/submission/149202111)
+    - >   Block Adventure : [Submission](https://codeforces.com/contest/1200/submission/149202111)
         | Type : Greedy
 
-    >   Restricted RPS : [Submission](https://codeforces.com/contest/1245/submission/149204338)
+    - >   Restricted RPS : [Submission](https://codeforces.com/contest/1245/submission/149204338)
         | Type : Greedy
 
-    >   Missing Bigram : [Submission](https://codeforces.com/contest/1618/submission/149223624)
+    - >Missing Bigram : [Submission](https://codeforces.com/contest/1618/submission/149223624)
         | Type : Strings , Implementation
         | Upsolved
 
-    >    Polycarp Recovers the Permutation : [Submission](https://codeforces.com/contest/1611/submission/149229213)
+    -   > Polycarp Recovers the Permutation : [Submission](https://codeforces.com/contest/1611/submission/149229213)
         | Type : Data Structue | Upsolved
+
+- Took part in [Codeforces Round #777 (Div. 2)](https://codeforces.com/contest/1647) and got 1 of them AC 
+    -   > Madoka and Math Dad : [Submission](https://codeforces.com/contest/1647/submission/149275999)
+        | Type : Greedy , Implementation
+
+<p align="center" width="100%">
+<img src="https://raw.githubusercontent.com/SunnyYeahBoiii/EveryDayCode/main/Code%20của%20Sunny/Images/sadcat.jpg" width="200" height="200"  >
+</p>
+
+- Sunny Solved 6 Excersises Today, Yay
+<p align="center" width="100%">
+<img src="https://raw.githubusercontent.com/SunnyYeahBoiii/EveryDayCode/main/Code%20của%20Sunny/Images/well-done-human.png" width="400" height="300"  >
+</p>
+
+
+## 12/3:
+    
+- Excersises Done:
+
+    - >  OS : [Code](/Code%20c%E1%BB%A7a%20Sunny/OnClass/10.21_22Tin/OS/a.cpp)
+        | Type : DP (Needs Optimization I Tried Bsearch)
+
+**-Sunny Just Had a Test At School And He Did It Pretty Good. Yay Sunny. But Sadly, He Decided To Have A Day Break And Only Did 1 Exercise Because He Is Tired.**
+
+<p align="center" width="100%">
+<img src="https://raw.githubusercontent.com/SunnyYeahBoiii/EveryDayCode/main/Code%20của%20Sunny/Images/pepesad.png" width="400" height="400"  >
+</p>
+
+## 13/3:
+
+- Excersise Done:
+    - > Minimum Triangulation : [Submission](https://codeforces.com/contest/1140/submission/149510635)
+        | Type : Implementation , Math
+
+- Today, Sunny read about Fermat's Little Theroem, Extended Euclidean Algorithm don't understand much but Sunny will read more tomorrow.
+
+<p align="center" width="100%">
+<img src="https://raw.githubusercontent.com/SunnyYeahBoiii/EveryDayCode/main/Code%20của%20Sunny/Images/Screen_Shot_2019-09-05_at_4.08.58_PM.jpg" width="400" height="250"  >
+</p>

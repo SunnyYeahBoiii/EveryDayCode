@@ -11,10 +11,16 @@
 typedef unsigned long long int ull;
 typedef long long ll;
 const long N=1e5 + 5;
-const int mod = 1e9 +7;
 using namespace std;
 void solve(){
-
+    int n;
+    int dp[N];
+    cin >> n;
+    dp[0] = 1;
+    FOR(i,1,n)
+        FOR(j,i,n)
+            if ( j - i >= 0) dp[j] = dp[j] + dp[j-i];
+    cout << dp[n];
 }
 int main(){
     fast;
