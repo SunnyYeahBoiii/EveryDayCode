@@ -20,12 +20,12 @@ int main()
     for (int iTest = 1; iTest <= NTEST; iTest++)
     {
         ofstream inp((NAME + ".inp").c_str());
-        int n = 1000;
-        inp << n << endl;
-        vector<int> a(n) , b(n);
-        for(int i = 0 ; i < n ; i++){
-            a[i] = Rand(1 , 10000000); b[i] = Rand(1 , 1000000);
-            inp << a[i] << " " << b[i] << endl;
+        int n = 50 , m = 50;
+        inp << n << " " << m << endl;
+        for(int i = 0 ; i < m ; i++){
+            for(int j = 0 ; j < n ; j++)
+                inp << Rand(1 , 100000) << " ";
+            inp << endl;
         }
         // Code phần sinh test ở đây
         inp.close();
