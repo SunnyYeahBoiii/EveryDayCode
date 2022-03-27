@@ -26,20 +26,35 @@ void solve(){
     for(int i = 0 ; i < n; i++)
         cin >> a[i] >> b[i];
 
-    dp[0][0] = b[0];
-    dp[1][0] = a[0];
+    dp[0][0] = b[0] + a[0];
+    dp[1][0] = a[0] + b[0];
 
     for(int i = 1 ; i < n; i++){
         // dp[0][i]
+        /*
+        if(a[i] > a[i-1])
+            dp[0][i] = max(dp[0][i] , dp[0][i-1] + (a[i] - a[i-1]) + b[i] + a[i]);
+        else dp[0][i] = max(dp[0][i] , dp[0][i-1] - (a[i-1] - a[i]) + b[i] + a[i]);
 
-        dp[0][i] = max(dp[0][i-1] + abs(a[i] - a[i-1]) + b[i] , dp[1][i-1] + abs(a[i] - b[i-1]) + b[i]);
-        dp[1][i] = max(dp[0][i-1] + abs(b[i] - a[i-1]) + a[i], dp[1][i-1] + abs(b[i] - b[i-1]) + a[i]);
+        if(a[i] > b[i-1])
+            dp[0][i] = max(dp[0][i] , dp[1][i-1] + (a[i] - b[i-1]) + b[i] + a[i]);
+        else dp[0][i] = max(dp[0][i] , dp[0][i-1] - (a[i-1] - a[i]) + b[i] + a[i]);
+
+        if(b[i] > a[i-1])
+            dp[1][i] = max(dp[0][i] , dp[0][i-1] + (b[i] - a[i-1]) + a[i] + b[i]);
+        else dp[1][i] = max(dp[0][i] , dp[0][i-1] - (a[i-1] - b[i]) + a[i] + b[i]);
+
+        if(b[i] > b[i-1])
+            dp[1][i] = max(dp[0][i] , dp[0][i-1] + (b[i] - b[i-1]) + a[i] + b[i]);
+        else dp[1][i] = max(dp[0][i] , dp[0][i-1] - (b[i] - b[i-1]) + a[i] + b[i]);
+        */
+        dp[0][i] = max(dp[0][i-1] + abs(a[i] - a[i-1]) + b[i] + a[i]- a[i-1], dp[1][i-1] + abs(a[i] - b[i-1]) + b[i] + a[i] - b[i-1]);
+        dp[1][i] = max(dp[0][i-1] + abs(b[i] - a[i-1]) + a[i] + b[i]- a[i-1], dp[1][i-1] + abs(b[i] - b[i-1]) + a[i] + b[i] - b[i-1]);
 
     }
 
-    cout << endl;
-    for(int i = 0 ; i < n ; i++)
-        cout << dp[0][i] + a[i]  << " " << dp[1][i] + b[i] << endl;
+    int res = max(dp[0][n-1] - a[n-1] , dp[1][n-1] - b[n-1]);
+    cout << res << endl;
 }
 
 int32_t main(){
