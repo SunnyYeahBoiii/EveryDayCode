@@ -20,13 +20,13 @@ int main()
     for (int iTest = 1; iTest <= NTEST; iTest++)
     {
         ofstream inp((NAME + ".inp").c_str());
-        int n = 50 , m = 50;
-        inp << n << " " << m << endl;
-        for(int i = 0 ; i < m ; i++){
-            for(int j = 0 ; j < n ; j++)
-                inp << Rand(1 , 100000) << " ";
-            inp << endl;
-        }
+        int n = 100;
+        inp << n  << endl;
+        for(int i = 0 ; i < n ; i++)
+            inp << Rand(1 , 100000) << " ";
+        inp << endl;
+        for(int i = 0 ; i < n ; i++)
+            inp << Rand(1 , 10000)  << " ";
         // Code phần sinh test ở đây
         inp.close();
         // Nếu dùng Linux thì "./" + Tên chương trình
