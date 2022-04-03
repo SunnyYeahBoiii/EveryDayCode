@@ -11,41 +11,37 @@ typedef long long ll;
 #define S second
 typedef unsigned long long int ull;
 using namespace std;
+const int N = 1e5+5;
+ll a[N], s[N], F0[N], F1[N], k, res;
 void solve(){
     int n;
     cin >> n;
-    deque<ll> dp;
-    ll maxn = 0,max1 = 0;
-    FOR(i,0,n-1) {
-        ll x; cin >> x;
-        dp.push_back(x);
-        max1 = max(max1,x);
-    }
-    set<ll> a;
-    if (dp.front() < dp.back()) {
-        maxn = dp.front();
-        dp.pop_front();
-    }
-    else {
-        maxn = dp.back();
-        dp.pop_back();
-    }
-    a.insert(maxn);
-    while (dp.size()) {
-        if (maxn <= dp.back() && maxn >= dp.front()) {
-            maxn = dp.back();
-            dp.pop_back();
-        }
-        else if (maxn <= dp.front() && dp.back() <= maxn) {
-            maxn = dp.front();
-            dp.pop_front();
-        } else if (maxn > max1) break;
-        else if (maxn > dp.front() && maxn > dp.back()) dp.pop_back(),dp.pop_front();
-        a.insert(maxn);
-    }
-    //if (a.size() > 1) cout << a.size();
-    //else cout << 1;
-    for(auto &p : a) cout << p << " ";
+    FOR(i,1,n) cin >> a[i];
+
+    k = 1;
+	s[1] = a[n];
+	F0[n] = 1;
+	FOD(i,n-1,1) {
+		int j = k;
+		while (j > 0 && a[i] >= s[j]) j--;
+		if (j == k) s[++k] = 0;
+		s[j+1] = max(s[j+1], a[i]);
+		F0[i] = j+1;
+	}
+
+	k = 1;
+    memset(s,0,sizeof(s));
+	s[1] = a[n];
+	F1[n] = 1;
+	FOD(i,n-1,1) {
+		int j = k;
+		while (j > 0 && a[i] <= s[j]) j--;
+		if (j == k) s[++k] = 1e9+7;
+		s[j+1] = min(s[j+1], a[i]);
+		F1[i] = j+1;
+	}
+    FOR(i,1,n) res = max(res,F0[i]+F1[i]-1);
+    cout << res;
 }
 int main(){
     fast;
