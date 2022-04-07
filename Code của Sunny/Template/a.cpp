@@ -1,5 +1,5 @@
 /*
-SunnyYeahBoi aka MinhPhuongVu
+SunnyYeahBoi
 It's My Time To Shine Bois
 */
 #include "bits/stdc++.h"
