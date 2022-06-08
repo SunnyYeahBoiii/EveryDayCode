@@ -1,4 +1,4 @@
-- This is a place that contains all codes were written by Kyjro.
+ This is a place that contains all codes were written by Kyjro.
 - Target : "Trying to better than yesterday !".
 
 My information : 
