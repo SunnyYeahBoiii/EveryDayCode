@@ -4,3 +4,6 @@
 My information : 
  - Facebook [LinK](https://www.facebook.com/ShoyaIshidaa/)
  - Gmail [Link](dangtranvuhai861@gmail.com)
+ - Vnoj [Link](https://oj.vnoi.info/user)
+ - Codeforces [Link](https://codeforces.com/profile/kyjro)
+ - 
