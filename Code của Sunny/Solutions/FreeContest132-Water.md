@@ -10,6 +10,7 @@ Link : [Free Contest 132 - Water](https://oj.vnoi.info/problem/fc132_water)
 	- Với một **h[i]** ta có thể dễ dàng nhận thấy, ô thứ **i** có chứa nước khi tồn tại một cột cao hơn **h[i]** ở bên trái của **i** và tương tự với bên phải  của **i**.
 		
 	- Để tính được lượng nước có tại ô thứ **i** ta làm như sau: với mỗi **h[i]**, ta đi tìm cột có độ cao lớn nhất về bên trái và độ cao lớn nhất về bên phải sau đấy lượng nước đọng lại tại ô thứ **i** sẽ bằng **min(h[j] , h[k]) - h[i]**
+		 
 		 **(với h[j] = max(h[1]...h[i-1]) và h[k] = max(h[i+1]...h[n]) )**
 		 
  -  **Phần 2: Làm sao để tính được lượng nước tối đa tăng được với một **h[i]** khi nó tăng lên 1 đơn vị?**
