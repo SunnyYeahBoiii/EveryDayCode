@@ -1,100 +1,46 @@
-/*
-SunnyYeahBoi
-It's My Time To Shine Bois
+/* 
+    Cred : SunnyYeahBoi 
+    May Not Be The Smartest But Always Try My Best <3
 */
+
 #include "bits/stdc++.h"
 
 using namespace std;
 
-#define ll long long
-#define int ll
+//___Defines
+#define TaskName "a"
+#define FastInput()   ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+#define FileInput() if(TaskName != ""){freopen(TaskName".inp" , "r" , stdin);freopen(TaskName".out" , "w" , stdout);}
+#define sun long long
 #define endl "\n"
 
-const int INF = LLONG_MAX;
-const int LOW = LLONG_MIN;
-const int MOD = 07032006;
+//___Constants
+const double Pi = acos(-1.0);
+const sun INF = INT_MAX;
 
-// BITWISE-------------------------------------
+//___Structs
+/*It's not empty ;-; what are u thinking about huh >:CCC*/
 
-template <typename x>
-    inline void ONBIT(x & a , x b){
-        a = a | (1 << b);
+//___Variables
+
+class Solution{
+    public:
+    void Solve(){
+
     }
-
-template <typename x>
-    inline void REVBIT(x & a , x b){
-        a = a ^ (1 << b);
-    }
-
-template<typename x>
-    inline bool ISON(x & a , x b){
-        return ((a >> b) & 1);
-    }
-
-//---------------------------------------------
-
-// NUMERIC-------------------------------------
-
-template <typename x>
-    inline x gcd (x a , x b){
-        x r;
-        while(b > 0){
-            r = a % b;
-            a = b;
-            b = r;
-        }
-        return a;
-    }
-
-template <typename x>
-    inline x bcnn (x a , x b){
-        return a / gcd(a , b) * b;
-    }
-
-template <typename x>
-    inline x pow_mod(x a , x b){
-        if(b <= 0)
-            return 1;
-        if(b == 1)
-            return a;
-
-        int t = pow_mod(a , b / 2);
-        if(b % 2 == 0)
-            return (t * t) % MOD;
-        else return ((t * t) % MOD * a) % MOD;
-    }
-
-// REMEMBER A ^ P-2 = A ^ -1 (MOD P)
-
-//---------------------------------------------
-
-void FileInput(string s){
-    if(s == "")
-        return;
-    freopen((s + ".INP").c_str() , "r" , stdin);
-    freopen((s + ".OUT").c_str() , "w" , stdout);
-}
-
-void fastIO(){
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);cout.tie(NULL);
-}
+};
 
 void solve(){
 
 }
 
-void multi(){
-    int t;
-    cin >> t;
-    while(t--)
+int main(){
+    FileInput();// For Some Specific Problems
+    FastInput();// OMG It's OVER 9000 (⊙_⊙;)
+    int t = 1;
+    //cin >> t;
+    while(t--){// For Constructive Problems
         solve();
-}
-
-signed main(){
-	FileInput("");
-	fastIO();
-	//multi();
-	solve();
-	return 0;
+    }
+    return 0;
 }
